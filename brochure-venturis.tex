@@ -1,0 +1,119 @@
+\documentclass[fleqn]{article}
+
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{industra}
+\usepackage{tabularx}
+\usepackage{txfonts}
+
+
+\usepackage{brochure-venturis}
+\usepackage{qrcode}
+\def\wLaTeX{\qrcode{https://labs.industra.space/wiki/V\%C3\%BDv\%C4\%9Bva}}
+
+\begin{document}
+	
+
+
+\noindent\begin{tabular}{
+  @{}%	                   flush left margin
+  b{.35\columnwidth}%	   logo
+  @{\hspace{.03\columnwidth}}%        gap
+  >{\huge\centering\color{DarkBlue}}p{.62\columnwidth}%	   headline
+  @{}%                     flush right margin
+}
+  \raisebox{-35pt}{%
+    \fontsize{60}{0}\selectfont\color{Black}\bfseries\wLaTeX}
+&
+  Industra Labs\\[4pt]\hrule\vspace*{7pt} 
+  
+  \par
+  \fontsize{16}{18}\selectfont\itshape
+  Uživatelský manuál - vývěva
+\end{tabular}
+
+\bigskip\bigskip
+
+\noindent\begin{tabular}{@{}
+                         p{.34\columnwidth}%		blurb
+		         @{\hspace{.04\columnwidth}}% 	gap
+		         p{.62\columnwidth}%		quotes
+		         @{}%			implicit margin
+}
+\rmfamily\lite\fontsize{14}{15}\selectfont\fontencoding{T1}\raggedright 
+
+
+\textit{Více informací na wiki https://labs.industra.space}
+\bigskip\\
+\textbf{Na co si dát pozor:}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item zkontrolovat neporušenost víka,
+	\item před spuštěním pumpy odstranit krytku výpusti,
+	\item při zapnutí/vypnutí pumpy jsou obě páčky v poloze OFF,
+	\item při vpouštění vzduchu zpět do komory musí být páčka, u hadice v poloze OFF,
+	\item nenechávat v podtlaku příliš dlouho, hrozí deformace/prasknutí víka.
+\end{itemize}
+\bigskip
+\textbf{Zakázané materiály:}\\
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item materiály extrémně hořlavé nebo výbušné při nižším tlaku,
+	\item prašné materiály.
+
+\end{itemize}
+\bigskip
+
+\textbf{Podpora}\\
+\begin{itemize}[noitemsep,topsep=0pt]
+	\begin{itshape}
+		\item simon@vaizard.net
+		\item ondrej@industra.space
+	\end{itshape}
+\end{itemize}
+
+
+\par\bigskip
+%\vbox to7pc{\hrule\hbox to\hsize{\vrule height7pc\hfill\vrule}\hrule}
+
+&\large
+% front RH blurb
+\lettrine[lines=1]{}{Vývěva} slouží pro vytvoření podtlaku v komoře (nádobě). Může sloužit k různým účelům, například pro odstranění vzduchových bublin z epoxidové pryskyřice.
+
+\subsection{Poznámky a upozornění}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Nepoužívejte, pokud je víko deformované nebo prasklé.
+	\item Pumpa je relativně hlasitá a její zvuk je jiný při chodu "na prázdno" a při odsávání.
+	\item Při manipulaci vždy udržujte víko ve vodorovné poloze a neklopte jej. Olej z barometru může vytékat.
+	\item Vždy použijte "vlastní dno" - kus dřeva, plexisklo nebo silikonovou podložku.
+\end{itemize}
+
+\subsection{Použití}
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Pumpu a komoru přeneste na stabilní podklad a připojte do elektrické sítě. Víko je s pumpou pevně spojeno, nepokoušejte se jednotlivé části odpojit.
+	\item Položte váš výrobek do komory a na komoru položte víko.
+	\item Zkontrolujte hladinu oleje v barometru (je téměř plný oleje).
+	\item Obě páčky musí být v poloze OFF.
+	\item Odstraňte krytku výpusti na pumpě (\textit{exhaustion cap}, označen žlutým textem).
+	\item Pumpu zapněte a postupným otevíráním ventilu (páčky) blíže u hadice začněte odsávat vzduch z komory.
+	\item Pokud během 10 sekund nedojde k poklesu tlaku, dejte páčku plně do polohy ON a víko ke komoře lehce přitiskněte, dokud tlak nezačne klesat, poté se víko udrží samo.
+	\item Po dosažení požadovaného (pod)tlaku přepněte páčku zpět do polohy OFF. Pokud budete po chvíli znovu vzduch odsávat, pumpu můžete nechat zapnutou. Jinak pumpu vypněte.
+	\item Pro obnovu tlaku pomalu přesuňte druhou páčku (tu vzdálenější od hadice) do polohy ON. Druhá musí zůstat v poloze OFF, jinak hrozí poškození pumpy.
+	\item Po dokončení práce vraťte pumpu a komoru zpět na své místo.
+\end{itemize}
+
+
+
+\end{tabular}
+
+\vfill
+
+\begin{figure}[b]
+	\flushright
+	\begin{itshape}
+    revision: ---REVISION\_ID---, release: ---RELEASE\_ID---, build date: ---BUILDDATE---
+	\end{itshape}
+\end{figure}
+
+
+
+\end{document}

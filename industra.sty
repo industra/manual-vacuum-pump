@@ -1,0 +1,43 @@
+\ProvidesPackage{industra}
+
+\usepackage{forloop}
+\usepackage[svgnames]{xcolor}
+\definecolor{industra-manual-darkgreen}{HTML}{139100}
+\definecolor{industra-manual-darkred}{HTML}{CF0000}
+
+
+%%% Service list generator
+
+\newcounter{ita}[section]
+\newcommand{\generateservicelist}{
+	\begingroup
+	\begin{figure}[t]
+		
+		\centering\section{Service list}
+	\end{figure}
+	\begin{table}
+		
+		\def\tand{&}
+		%\newcounter{ita}[section]
+		\centering
+		\begin{tabular}{|p{2cm}|p{2.5cm}|p{9cm}|p{3cm}|}
+			
+			\hline
+			Date & Name & Operation & Signature \\ \hline
+			&      &           &           \\[4ex] \hline
+			
+			\setcounter{ita}{1}%
+			\whiledo{\theita<24}{%
+				\tand \tand  \tand \\[4ex] \hline
+				\stepcounter{ita}%
+			}%
+			
+			&      &           &           \\[4ex]\hline
+			
+			
+			
+		\end{tabular}
+		
+	\end{table}
+	\endgroup
+}
